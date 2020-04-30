@@ -1,0 +1,9 @@
+https://www.cyberciti.biz/faq/howto-rhel-linux-open-port-using-iptables/ 
+https://geekflare.com/tomcat-login-problem/
+
+iptables -I INPUT 1 -p tcp --dport 443 -j ACCEPT
+sudo firewall-cmd --zone=public --permanent --add-port=8080/tcp 
+sudo firewall-cmd --reload
+
+
+
